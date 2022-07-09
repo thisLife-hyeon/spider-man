@@ -1,0 +1,46 @@
+.bg-text-container {
+  position: absolute;
+  z-index: -999;
+}
+
+@keyframes text-scrolling {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.animate-text {
+  animation: text-scrolling 20s linear infinite;
+  will-change: transform;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+
+  &.left {
+    animation: text-scrolling 20s linear infinite;
+    animation-direction: reverse;
+    position: relative;
+  }
+}
+
+span {
+  font-family: "Bangers", cursive;
+  font-size: 240px;
+  color: #333333;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: auto;
+  font-weight: 800;
+  letter-spacing: 2;
+}
+.txtroll_r {
+  position: absolute;
+  margin-top: 260px;
+}
+// .txtroll_l {
+//   position: absolute;
+//   margin-top: 0px;
+// }

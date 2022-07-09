@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/moving.css" />
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+    <!-- 다음섹션 스크롤 -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script> -->
+
+    <!-- 가로 스크롤링 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+
+    <!-- <script defer src="js/scroll.js"></script> -->
+    <script defer src="js/index.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <section class="header panel" id="header">
+      <nav class="gnb">
+        <div class="gnb__logo"></div>
+        <div class="gnb__right">
+          <ul>
+            <li><a href="#header">SOUNDTRACK</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#character">CHARACTER</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <iframe
+        width="1920"
+        height="980"
+        src="https://www.youtube.com/embed/he5SXkqxoE4?controls=0&amp;start=15?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <div class="header__txt">
+        <h2>SPIDER-MAN</h2>
+        <h3>Into the spider-verse</h3>
+      </div>
+    </section>
+
+    <section class="story panel" id="story">
+      <div class="story_left">
+        <h3>STORY</h3>
+        <img src="img/story.jpg" alt="" />
+      </div>
+      <div class="story__right">
+        <h4>스파이더맨: 뉴 유니버스 / 2018</h4>
+        <p>하나의 유니버스에서 만나 팀을 결성한 스파이더맨들은</p>
+        <p>과연 세계를 구할 수 있을까?</p>
+        <p>스파이더맨들의 새로운 시대가 열린다!!</p>
+        <div class="story__button">
+          <a href="#"><button>자세히보기</button></a>
+          <a href="#"><button>다운로드</button></a>
+        </div>
+      </div>
+      <div class="bg-text-container">
+        <div class="animate-text">
+          <span class="txtroll_r">into the spider-verse &nbsp;</span>
+          <span class="txtroll_r">into the spider-verse &nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper panel" id="character">
+      <div class="animate-text left">
+        <span class="txtroll_l">into the spider-verse &nbsp;</span>
+        <span class="txtroll_l">into the spider-verse &nbsp;</span>
+      </div>
+      <div class="factsContainer">
+        <div class="factsContainer_sm">
+          <div class="fact">
+            <div class="cards">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="97"
+                height="114"
+                viewBox="0 0 97 114"
+              >
+                <defs>
+                  <pattern id="pattern" width="1" height="1" viewBox="0 -7.031 79 96">
+                    <image
+                      preserveAspectRatio="none"
+                      width="79"
+                      height="96"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </pattern>
+                  <filter
+                    id="자산_1-8"
+                    x="0"
+                    y="0"
+                    width="97"
+                    height="114"
+                    filterUnits="userSpaceOnUse"
+                  >
+                    <feOffset dx="5" dy="5" input="SourceAlpha" />
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feFlood flood-opacity="0.161" />
+                    <feComposite operator="in" in2="blur" />
+                    <feComposite in="SourceGraphic" />
+                  </filter>
+                </defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#자산_1-8)">
+                  <rect
+                    id="자산_1-8-2"
+                    data-name="자산 1-8"
+                    width="79"
+                    height="96"
+                    transform="translate(4 4)"
+                    fill="url(#pattern)"
+                  />
+                </g>
+              </svg>
+              <h3>SPIDER-MAN</h3>
+            </div>
+          </div>
+          <div class="fact">
+            <img src="img/card-1.png" alt="" />
+          </div>
+          <div class="fact">
+            <img src="img/card-2.png" alt="" />
+          </div>
+          <div class="fact">
+            <img src="img/card-3.png" alt="" />
+          </div>
+          <div class="fact">
+            <img src="img/card-4.png" alt="" />
+          </div>
+          <div class="fact">
+            <img src="img/card-5.png" alt="" />
+          </div>
+          <div class="fact">
+            <img src="img/card-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="socialContainer"></div>
+    </section>
+
+    <section class="pSection miles panel">
+      <div class="container bg">
+        <div class="pContent miles__txtbox">
+          <h2>miles morales</h2>
+          <p>아들이 잘되길 바라는 부모님 때문에 엘리트 학교에 가게 됐지만,</p>
+          <p>그래피티를 그리면서 평범한 삶을 살길 원하는 십대 청소년이다.</p>
+        </div>
+      </div>
+      <img class="pImage" src="img/ch-miles.jpg" alt="Filler image" />
+    </section>
+
+    <section class="pSection peter panel">
+      <!-- partial:index.partial.html -->
+      <canvas id="c"></canvas>
+      <div class="peter__bg"></div>
+      <div class="container bg panel">
+        <div class="pContent peter__box">
+          <img class="peter__img2" src="img/ch-peter2.jpg" alt="image" />
+        </div>
+      </div>
+      <img class="peter__img1" src="img/ch-peter.jpg" alt="image" />
+      <h2>peter B. parker</h2>
+    </section>
+    <!-- 
+    <section class="peter">
+     partial:index.partial.html 
+      <canvas id="c"></canvas>
+      <div class="bg panel"></div>
+      <div class="peter__imgbox">
+        <img class="peter__img1" src="img/ch-peter.jpg" alt="" />
+        <img class="peter__img2" src="img/ch-peter2.jpg" alt="" />
+      </div>
+      <h2>peter B. parker</h2>
+    </section>
+    -->
+
+    <section class="panel">
+      <div class="bg gwen"></div>
+      <h2>Spider-gwen</h2>
+    </section>
+    <section class="panel">
+      <div class="bg noir">
+        <iframe
+          width="100%"
+          height="980px"
+          src="https://www.youtube.com/embed/F1cbLKwubC0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>Spider-Man noir</h2>
+    </section>
+    <section class="panel">
+      <div class="bg peni">
+        <img src="img/ch-peni.png" alt="" />
+      </div>
+      <h2>peni parker</h2>
+    </section>
+    <section class="panel">
+      <div class="bg Ham"></div>
+      <h2>Spider-Ham</h2>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.miles {
+  background-color: $color--primary-blue;
+  position: relative;
+  z-index: -2;
+
+  &__txtbox {
+    position: absolute;
+    top: 64%;
+    left: -24%;
+
+    h2 {
+      margin-bottom: -16px;
+    }
+  }
+}
