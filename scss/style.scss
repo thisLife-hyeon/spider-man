@@ -25,6 +25,7 @@ body {
 
 section {
   position: relative;
+  width: 192rem;
   height: 98rem;
   display: flex;
   align-items: center;
@@ -33,6 +34,7 @@ section {
 }
 
 .panel {
+  width: 192rem;
   height: 98rem;
   position: sticky;
   /* top: 10%; */
@@ -44,7 +46,7 @@ section {
   top: 0;
   left: 0;
   width: 192rem;
-  min-height: 98rem;
+  height: 98rem;
   z-index: -2;
   background-size: cover;
   background-position: center;
