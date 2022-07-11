@@ -25,14 +25,14 @@ body {
 
 section {
   position: relative;
-  height: 980px;
+  height: 98rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .panel {
-  height: 980px;
+  height: 98rem;
   position: sticky;
   /* top: 10%; */
 }
@@ -51,14 +51,14 @@ section {
 
 .pSection {
   position: relative;
-  width: 1920px;
-  height: 980px;
+  width: 192rem;
+  height: 98rem;
 }
 
 .container {
-  padding: 20px;
+  padding: 2rem;
   margin: 0 auto;
-  max-width: 1070px;
+  max-width: 107rem;
   position: relative;
   z-index: 1;
 }
@@ -71,7 +71,7 @@ section {
   position: absolute;
   top: -18%;
   right: 10%;
-  max-height: 900px;
+  max-height: 90rem;
 }
 /*
   .gnb {
