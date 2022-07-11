@@ -1,6 +1,7 @@
 @import "components/abstracts";
 @import "components/fonts";
 
+@import "pages/header";
 @import "pages/moving";
 @import "pages/cards";
 @import "pages/miles";
@@ -10,6 +11,7 @@
   margin: 0;
   padding: 0;
   color: #fff;
+  box-sizing: border-box;
 }
 
 html,
@@ -79,14 +81,6 @@ section {
   max-height: 90rem;
 }
 
-.story {
-  background-color: #141414;
-
-  &__img {
-    width: 81rem;
-  }
-}
-
 .gwen {
   background-image: url(../img/ch-gwen.jpg);
 }
@@ -108,34 +102,34 @@ section {
   html {
     font-size: 7px;
   }
-  // .gnb {
-  //   height: 10rem;
-  // }
+  .gnb {
+    height: 10rem;
+  }
 }
 
 @media (max-width: 662px) {
   html {
     font-size: 5px;
   }
-  // .gnb {
-  //   height: 10rem;
-  // }
+  .gnb {
+    height: 10rem;
+  }
 }
 
 @media (max-width: 480px) {
   html {
     font-size: 4px;
   }
-  // .gnb {
-  //   height: 10rem;
-  // }
+  .gnb {
+    height: 10rem;
+  }
 }
 
 @media (max-width: 380px) {
   html {
     font-size: 4px;
   }
-  // .gnb {
-  //   height: 10rem;
-  // }
+  .gnb {
+    height: 10rem;
+  }
 }

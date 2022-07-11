@@ -39,33 +39,38 @@ for (let i = 0; i < parent.length; i++) {
 //가로로 스크롤
 let scroll_tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".factsContainer",
-      start: "top center",
-      // pin: true,
-      scrub: true,
-      end: "+=0",
+      // trigger: ".cards",
+      // start: "top bottom",
+      // // pin: true,
+      // scrub: true,
+      // end: "+=0",
       // markers: true,
     },
   }),
   facts = [...document.querySelectorAll(".fact")];
-// scroll_tl.to(".factsContainer h2", {
-//   scale: 1.5,
+
+// scroll_tl.to(".factsContainer h3", {
+//   // scale: 1.5,
 //   duration: 1,
 //   ease: "slow",
 // });
+
 scroll_tl.to(facts, {
-  xPercent: -85 * (facts.length - 1),
+  xPercent: -100 * (facts.length - 1),
   scrollTrigger: {
-    trigger: ".factsContainer_sm",
-    start: "center center",
-    pin: true,
+    trigger: ".trigger",
+    // start: "top top",
+    // pin: true,
     // horizontal: true,
     // pinSpacing:false,
     // markers: true,
     scrub: 1,
-    snap: 1 / (facts.length - 1),
+    // snap: 1 / (facts.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
     // end: () => `+=${smallFactsContainer.offsetWidth}`
-    end: () => `+=0`,
+    pin: true,
+    // snap: 1 / (facts.length - 1),
+    start: "top center",
+    end: "+=700",
   },
 });

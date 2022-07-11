@@ -1,7 +1,65 @@
 .header {
   .gnb {
     position: absolute;
+    top: 3%;
     z-index: 999;
+    width: 192rem;
+    padding: 0 18rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color--black;
+
+    &__logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 2.7rem;
+        margin-right: 0.6rem;
+      }
+      h4 {
+        font-size: 4rem;
+        color: $color--primary-red;
+      }
+    }
+    &__right {
+      ul {
+        width: 37rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          list-style: none;
+          font-size: 1.6rem;
+          color: $color--gray;
+          font-weight: 800;
+          // border-bottom: 2px solid transparent;
+
+          &:hover {
+            color: $color--primary-red;
+            cursor: pointer;
+            transition: color 0.3s;
+            // border-bottom: 2px solid $color--primary-red;
+            // transition: border-bottom 0.3s ease;
+            &::after {
+              width: 100%;
+              //transition: width .3s;
+            }
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $color--primary-red;
+            transition: width 0.2s;
+          }
+        }
+      }
+    }
   }
 
   &__video {
@@ -15,7 +73,38 @@
   &__txt {
     position: absolute;
     z-index: 10;
-    top: 0;
-    left: 0;
+    top: 40%;
+    left: 10%;
+  }
+}
+
+.story {
+  width: 192rem;
+  padding: 0 20rem;
+  background-color: $color--deep-gray;
+  display: flex;
+  justify-content: space-between;
+  &__img {
+    width: 81rem;
+  }
+  &__right {
+    margin-right: 12rem;
+    height: 5px;
+
+    h5 {
+      margin-bottom: 4rem;
+    }
+    a {
+      text-decoration: none;
+      button {
+        background-color: transparent;
+        border: 2px solid $color--primary-red;
+        color: $color--primary-red;
+        width: 18rem;
+        height: 5rem;
+        border-radius: 1.8rem;
+        font-size: 1.6rem;
+      }
+    }
   }
 }
