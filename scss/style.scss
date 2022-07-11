@@ -96,3 +96,45 @@ section {
 .Ham {
   background-color: #000;
 }
+
+@media (max-width: 1338px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 7px;
+  }
+  // .gnb {
+  //   height: 10rem;
+  // }
+}
+
+@media (max-width: 662px) {
+  html {
+    font-size: 5px;
+  }
+  // .gnb {
+  //   height: 10rem;
+  // }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+  // .gnb {
+  //   height: 10rem;
+  // }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 4px;
+  }
+  // .gnb {
+  //   height: 10rem;
+  // }
+}
