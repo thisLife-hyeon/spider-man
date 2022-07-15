@@ -1,0 +1,25 @@
+.ham {
+  background-color: #000;
+  background-image: url(../img/ch-ham.jpg);
+  // @include bgImg;
+  position: relative;
+  z-index: -2;
+
+  &__blue {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__txtbox {
+    position: absolute;
+    top: 58%;
+    left: 60%;
+    z-index: 1;
+
+    h2 {
+      // color: $color--primary-red;
+      margin-bottom: 0.4rem;
+    }
+  }
+}

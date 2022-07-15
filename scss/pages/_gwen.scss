@@ -1,0 +1,17 @@
+.gwen {
+  background-image: url(../img/ch-gwen.jpg);
+  position: relative;
+  z-index: -2;
+
+  &__txtbox {
+    position: absolute;
+    top: 28%;
+    left: 54%;
+    z-index: 1;
+
+    h2 {
+      color: $color--primary-red;
+      margin-bottom: 0.4rem;
+    }
+  }
+}

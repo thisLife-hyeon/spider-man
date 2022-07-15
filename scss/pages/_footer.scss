@@ -1,0 +1,24 @@
+.footer {
+  width: 100vw;
+  height: 34rem;
+  background-color: $color--deep-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__left {
+    width: 20rem;
+    display: flex;
+    margin-right: 1rem;
+    h4 {
+      color: $color--gray;
+    }
+  }
+  &__right {
+    p {
+      color: $color--gray;
+
+      font-size: 1.6rem;
+    }
+  }
+}

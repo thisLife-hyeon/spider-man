@@ -1,6 +1,24 @@
 .noir {
   background-color: $color--black;
+  position: relative;
+  z-index: -1;
+
   video {
     width: 100%;
+    // position: relative;
+    // z-index: -2;
+    opacity: 0.5;
+  }
+
+  &__txtbox {
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    z-index: 1;
+
+    h2 {
+      // color: $color--light-gray;
+      margin-bottom: 0.4rem;
+    }
   }
 }

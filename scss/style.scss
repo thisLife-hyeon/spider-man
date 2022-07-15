@@ -6,6 +6,11 @@
 @import "pages/cards";
 @import "pages/miles";
 @import "pages/peter";
+@import "pages/gwen";
+@import "pages/noir";
+@import "pages/peni";
+@import "pages/ham";
+@import "pages/footer";
 
 * {
   margin: 0;
@@ -81,17 +86,6 @@ section {
   max-height: 90rem;
 }
 
-.gwen {
-  background-image: url(../img/ch-gwen.jpg);
-}
-
-.peni {
-  background-color: #000f3d;
-}
-.Ham {
-  background-color: #000;
-}
-
 @media (max-width: 1338px) {
   html {
     font-size: 8px;
@@ -131,5 +125,31 @@ section {
   }
   .gnb {
     height: 10rem;
+  }
+}
+
+.logo__letter {
+  position: absolute;
+  bottom: 6rem;
+  right: 10rem;
+  z-index: 99;
+}
+
+.circles {
+  width: 10rem;
+  height: 98rem;
+  // position: fixed;
+  // z-index: 999;
+  background-color: rgb(68, 58, 46);
+
+  h6 {
+    transform: rotate(90deg);
+    font-size: 28px;
+  }
+  li {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid $color--white;
+    border-radius: 50%;
   }
 }
