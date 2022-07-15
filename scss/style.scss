@@ -1,17 +1,6 @@
 @import "components/abstracts";
 @import "components/fonts";
 
-@import "pages/header";
-@import "pages/moving";
-@import "pages/cards";
-@import "pages/miles";
-@import "pages/peter";
-@import "pages/gwen";
-@import "pages/noir";
-@import "pages/peni";
-@import "pages/ham";
-@import "pages/footer";
-
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +74,16 @@ section {
   right: 10%;
   max-height: 90rem;
 }
+
+@import "pages/header";
+@import "pages/cards";
+@import "pages/miles";
+@import "pages/peter";
+@import "pages/gwen";
+@import "pages/noir";
+@import "pages/peni";
+@import "pages/ham";
+@import "pages/footer";
 
 @media (max-width: 1338px) {
   html {

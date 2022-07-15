@@ -124,10 +124,79 @@
       font-weight: bold;
       cursor: pointer;
 
-      :hover {
-        background-color: $color--white;
-        opacity: 0.4;
-      }
+      // :hover {
+      //   background-color: $color--white;
+      //   opacity: 0.4;
+      // }
     }
   }
+}
+
+.bg-text-container {
+  position: absolute;
+  z-index: -999;
+}
+
+@keyframes text-scrolling {
+  0% {
+    transform: translate3d(-80%, 0, 0);
+  }
+  100% {
+    transform: translate3d(10%, 0, 0);
+  }
+}
+@keyframes text-scrolling2 {
+  0% {
+    transform: translate3d(80%, 0, 0);
+  }
+  100% {
+    transform: translate3d(10%, 0, 0);
+  }
+}
+
+// .animate-text {
+//   animation: text-scrolling 20s linear infinite;
+//   will-change: transform;
+//   display: block;
+//   position: relative;
+//   white-space: nowrap;
+
+//   &--left {
+//     animation: text-scrolling2 20s infinite;
+//     will-change: transform;
+//     display: block;
+//     position: relative;
+//     white-space: nowrap;
+//   }
+// }
+
+span {
+  font-family: "Bangers", cursive;
+  font-size: 24rem;
+  color: #333333;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: auto;
+  font-weight: 800;
+  letter-spacing: 2;
+}
+.txtroll_r {
+  position: absolute;
+  animation: text-scrolling 30s linear infinite;
+  will-change: transform;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  margin-top: 70rem;
+  // background-color: beige;
+}
+.txtroll_l {
+  position: absolute;
+  animation: text-scrolling2 30s linear infinite;
+  will-change: transform;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  // background-color: green;
+  margin-top: -50rem;
 }
